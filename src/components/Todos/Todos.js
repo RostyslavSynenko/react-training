@@ -30,9 +30,7 @@ const Todos = () => {
 
   const onCheck = id => {
     setTodos(
-      todos.filter(todo =>
-        todo.id === id ? Object.assign(todo, { done: !todo.done }) : todo
-      )
+      todos.map(todo => (todo.id === id ? { ...todo, done: !todo.done } : todo))
     );
   };
 
