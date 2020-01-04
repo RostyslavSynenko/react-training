@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,8 +21,56 @@ body {
 }
 
 .App {
-  margin: 5vh 20vw;
-  padding: 15px;
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
   box-shadow: 2px 2px 20px black;
   background-color: white;
+}
+
+ul {
+  position: relative;
+}
+
+ul li:hover {
+  background-color: whitesmoke;
+}
+
+button {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  position: absolute;
+  right: 0;
+}
+
+.btn-delete:hover {
+  background-color: lightpink;
+}
+
+.btn-add {
+  padding: 2px 15px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.btn-add:hover {
+  background-color: lightseagreen;
+}
+
+.btn-clean:hover {
+  background-color: lightskyblue;
+}
+
+[type='checkbox'],
+.title {
+  cursor: pointer;
+}
+
+.add-new {
+  text-align: center;
 }

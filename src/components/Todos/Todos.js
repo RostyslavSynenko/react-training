@@ -90,7 +90,9 @@ const Todos = () => {
         addTodo={addTodo}
       />
 
-      <button onClick={onClean}>Clean</button>
+      <button className="btn-clean" onClick={onClean}>
+        Clean
+      </button>
     </div>
   );
 };

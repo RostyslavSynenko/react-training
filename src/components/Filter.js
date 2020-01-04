@@ -2,11 +2,11 @@ import React from 'react';
 
 const Filter = ({ handleInputChange, filter, todos }) => {
   return (
-    <div>
+    <div className="filter">
       <input
         type="text"
         name="filter"
-        placeholder="filter tasks"
+        placeholder="Filter tasks"
         onChange={handleInputChange}
         value={filter}
       />
